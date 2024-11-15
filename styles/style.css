@@ -63,7 +63,7 @@
 /* Theme switch */
 .theme-menu__list {
   display: grid;
-  gap: 14px;
+  gap: 10px;
   place-items: center center;
 }
 
@@ -131,7 +131,7 @@
 .main {
   display: grid;
   place-items: center center;
-  gap: 52px;
+  gap: 50px;
   margin-block-end: 52px;
 }
 
