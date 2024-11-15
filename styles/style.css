@@ -224,7 +224,7 @@
 
 .card__buttons {
   display: flex;
-  gap: 12px;
+  gap: 14px;
   justify-content: flex-end;
 }
 
@@ -283,8 +283,8 @@
 }
 
 .button__text {
+  color: var(--button-text-color, #000);
   mix-blend-mode: difference;
-  color: var(--button-text-color, #ffffff);
 }
 
 /* Footer */

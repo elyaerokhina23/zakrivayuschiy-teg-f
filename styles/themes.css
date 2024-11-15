@@ -25,9 +25,9 @@
       transparent 4px
     ),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
-  --fill-contour: #ff0000;
-  --fill-sparks: #ff0000;
+  --like-contour-color: var(--black-color, #000);
   --card-border-color: #fff;
+  --button-text-color: var(--black-color, #000);
 }
 
 :root.theme-dark {
@@ -51,8 +51,7 @@
       transparent 4px
     ),
     linear-gradient(to bottom, #007f0c 0%, #004306 100%);
-  --fill-contour: #ff6666;
-  --card-border-color: #000;
+  --like-contour-color: var(--green-color, #00cc14);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -79,5 +78,6 @@
       linear-gradient(to bottom, #007f0c 0%, #004306 100%);
     --fill-contour: #ff6666;
     --card-border-color: #000;
+    --like-contour-color: var(--green-color, #00cc14);
   }
 }

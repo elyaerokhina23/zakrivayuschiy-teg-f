@@ -31,6 +31,6 @@
 
   /* Цвета для сердца */
   --like-main-body-color: #ff0000;
-  --like-contour-color: var(--text-color, #000000);
+  --like-contour-color: var(--black-color: #000);
   --like-sparks-color: #ff0000;
 }
