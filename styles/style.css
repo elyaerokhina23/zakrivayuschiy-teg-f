@@ -131,7 +131,7 @@
 .main {
   display: grid;
   place-items: center center;
-  gap: 35px;
+  gap: 52px;
   margin-block-end: 52px;
 }
 
