@@ -131,7 +131,7 @@
 .main {
   display: grid;
   place-items: center center;
-  gap: 49px;
+  gap: 46px;
   margin-block-end: 50px;
 }
 
@@ -350,7 +350,7 @@
     gap: 17px;
   }
   .main {
-    gap: 52px;
+    gap: 49px;
   }
   .card__image-caption {
     top: 17px;
