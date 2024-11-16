@@ -271,7 +271,7 @@
   inline-size: 100%;
   block-size: 100%;
   transform-origin: left;
-  background-color: var(--button-text-color, #000);
+  background-color: var(--animation-color, #000);
   transition: transform 0.5s ease-in-out;
   transform: scaleX(0);
   top: 0;
@@ -283,7 +283,7 @@
 }
 
 .button__text {
-  color: var(--button-text-color, #000);
+  color: var(--button-color, #000);
   mix-blend-mode: difference;
 }
 
