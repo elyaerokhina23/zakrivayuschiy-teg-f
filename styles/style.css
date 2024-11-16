@@ -303,7 +303,6 @@
 
 .footer__icon {
   inline-size: clamp(1.3125rem, 2.2548rem + -2.1538vw, 1.75rem);
-  fill: var(--button-text-color, #000);
 }
 
 /* Dialog */
