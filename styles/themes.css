@@ -27,13 +27,12 @@
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
   --like-contour-color: var(--black-color, #000);
   --card-border-color: #fff;
-  --button-text-color: var(--black-color, #000);
 }
 
 :root.theme-dark {
   --headings-font-weigtht: 785;
   --main-font-weight: 465;
-  --button-text-color: var(--black-color, #000);
+  --button-text-color: var(--green-color, #00cc14);
   --text-color: var(--green-color, #00cc14);
   --background-color: var(--black-color, #000);
   --background-image: repeating-linear-gradient(
@@ -58,7 +57,7 @@
   :root {
     --headings-font-weigtht: 785;
     --main-font-weight: 465;
-    --button-text-color: var(--black-color, #000);
+    --button-text-color: var(--green-color, #00cc14);
     --text-color: var(--green-color, #00cc14);
     --background-color: var(--black-color, #000);
     --background-image: repeating-linear-gradient(
