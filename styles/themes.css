@@ -11,6 +11,7 @@
   --button-color: var(--white-color, #fff);
   --text-color: var(--black-color, #000);
   --background-color: var(--white-color, #fff);
+  --header-background-color: var(--white-color, #fff);
   --background-image: repeating-linear-gradient(
       to right,
       #d3d3d3 0px,
@@ -32,11 +33,12 @@
 
 :root.theme-dark {
   --headings-font-weigtht: 785;
-  --main-font-weight: 465;
+  --main-font-weight: 400;
   --animation-color: var(--green-color, #00cc14);
   --button-color: var(--green-color, #00cc14);
   --text-color: var(--green-color, #00cc14);
   --background-color: var(--black-color, #000);
+  --header-background-color: var(--black-color, #000);
   --background-image: repeating-linear-gradient(
       to right,
       #000 0px,
@@ -58,11 +60,12 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --headings-font-weigtht: 785;
-    --main-font-weight: 465;
+    --main-font-weight: 400;
     --animation-color: var(--green-color, #00cc14);
     --button-color: var(--green-color, #00cc14);
     --text-color: var(--green-color, #00cc14);
     --background-color: var(--black-color, #000);
+    --header-background-color: var(--black-color, #000);
     --background-image: repeating-linear-gradient(
         to right,
         #000 0px,
@@ -78,8 +81,6 @@
         transparent 4px
       ),
       linear-gradient(to bottom, #007f0c 0%, #004306 100%);
-    --fill-contour: #ff6666;
-    --card-border-color: #000;
     --like-contour-color: var(--green-color, #00cc14);
   }
 }

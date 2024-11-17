@@ -551,23 +551,23 @@
         </div>
       </article>
     </main>
-    <footer class="footer">
+    <div class="save-button">
       <button
-        class="button footer__button"
+        class="button save__button"
         type="button"
         onclick="window.modal.showModal()"
         aria-controls="modal"
       >
         <svg
-          class="footer__icon"
+          class="save__icon"
           viewBox="0 0 21 21"
           fill="var(--button-text-color, #000)"
         >
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
-        <span class="button__text">Сохранить на память</span>
+        <span class="button__text">Сохранить на&nbsp;память</span>
       </button>
-    </footer>
+    </div>
 
     <!-- Модальное окно -->
     <dialog class="modal" id="modal">
@@ -575,7 +575,10 @@
         <svg class="modal__icon" viewBox="0 0 40 40" height="39" width="39">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
-        <p class="modal__paragraph">Вставьте дискету, чтобы продолжить</p>
+        <p class="modal__paragraph">
+          Вставьте дискету,<br />
+          чтобы продолжить
+        </p>
       </div>
       <form method="dialog" class="dialog-form">
         <button class="button dialog__button" type="submit">

@@ -18,7 +18,6 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font-family, "Inter", sans-serif);
-  font-variation-settings: "wght" var(--main-font-weight, 400);
   background-color: var(--background-color, #fff);
   color: var(--text-color, #000);
   background-image: var(--background-image, none);
@@ -36,13 +35,14 @@
 }
 
 .header__container {
-  background-color: var(--white-color, #fff);
+  background-color: var(--header-background-color, #fff);
   display: flex;
   flex-direction: column;
   gap: 25px;
   padding-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
   padding-inline: clamp(0.875rem, -1.4688rem + 10vw, 7.53125rem);
   padding-block-end: clamp(1.5625rem, 1.5625rem + 0vw, 1.5625rem);
+  border: 2px solid currentColor;
 }
 
 .header__logo-title {
@@ -52,6 +52,7 @@
 .header__title {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   margin-block-end: 20px;
+  font-variation-settings: "wght" var(--main-font-weight, 400);
 }
 
 .header__subtitle {
@@ -131,7 +132,7 @@
 .main {
   display: grid;
   place-items: center center;
-  gap: 46px;
+  gap: 51px;
   margin-block-end: 50px;
 }
 
@@ -143,7 +144,7 @@
 }
 
 .card__title {
-  padding: 3px 13px 10px;
+  padding: 3px 13px 6px;
   font-variation-settings: "wght" var(--headings-font-weight);
   font-size: 18px;
 }
@@ -209,7 +210,7 @@
 }
 
 .card__content {
-  padding: 25px;
+  padding: 25px 25px 28px;
   font-size: 18px;
   line-height: 21px;
 }
@@ -219,7 +220,13 @@
 }
 
 .card__paragraph:last-of-type {
-  margin-block-end: 25px;
+  margin-block-end: 26px;
+}
+
+.like-icon {
+  cursor: pointer;
+  display: flex;
+  place-items: center center;
 }
 
 .card__buttons {
@@ -244,7 +251,9 @@
 }
 
 .card__like-button {
-  padding: 1px 36px;
+  padding: 1px 6px;
+  min-inline-size: 130px;
+  max-block-size: 38px;
 }
 
 .button {
@@ -283,25 +292,25 @@
 }
 
 .button__text {
-  color: var(--button-color, #000);
+  color: var(--button-color, #fff);
   mix-blend-mode: difference;
 }
 
 /* Footer */
-.footer {
+.save-button {
   display: grid;
   place-items: center center;
   margin-block-end: 103px;
 }
 
-.footer__button {
+.save__button {
   display: flex;
   gap: 8px;
   place-items: center center;
   padding: 15px 20px;
 }
 
-.footer__icon {
+.save__icon {
   inline-size: clamp(1.3125rem, 2.2548rem + -2.1538vw, 1.75rem);
 }
 
@@ -349,17 +358,17 @@
   .header__container {
     gap: 17px;
   }
+  .header__title {
+    margin-block-end: 18px;
+  }
   .main {
-    gap: 49px;
+    gap: 50px;
   }
   .card__image-caption {
-    top: 17px;
+    top: 15px;
     right: 13px;
   }
-  .card__content {
-    padding-block-start: 22px;
-  }
-  .footer__button {
+  .save__button {
     flex-direction: column;
   }
 }
